@@ -1,6 +1,6 @@
 package no.xioco.Handlers;
 
-import org.bukkit.entity.Player;
+import org.bukkit.World;
 
 /**
  * Created by Thomas on 26.10.2014.
@@ -9,12 +9,12 @@ public class ChunkInfo {
 
     int x;
     int z;
-    Player player;
+    World world;
 
-    public ChunkInfo(int x, int z, Player player){
+    public ChunkInfo(int x, int z, World world){
         this.x = x;
         this.z = z;
-        this.player = player;
+        this.world = world;
     }
 
     public int getX(){
@@ -25,7 +25,5 @@ public class ChunkInfo {
         return this.z;
     }
 
-    public Player getPlayer(){
-        return this.player;
-    }
+    public World getWorld() { return this.world; }
 }

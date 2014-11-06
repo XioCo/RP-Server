@@ -1,7 +1,0 @@
-name: XioCo-plugin
-description: XioCo-plugin.
-main: no.xioco.Main.Main
-version: 0.1
-commands:
-    tomt:
-      description: Gir deg tomt-menyen

@@ -1,0 +1,27 @@
+name: XioCo-plugin
+description: XioCo-plugin.
+main: no.xioco.Roleplay.Main.Main
+version: 0.1
+commands:
+    tomt:
+      description: Gir deg tomt-menyen
+    hide:
+      description: Lar deg bli usynlig
+    ri:
+      description: Lar deg ri på andre brukere
+    open:
+      description: Lar deg åpne inventory til valgt bruker
+    afk:
+      description: Setter deg i AFK-modus
+    clearchat:
+      description: Tømmer chat
+    frys:
+      description: Fryser spiller
+    tin:
+      description: Tiner spiller
+    info:
+      description: Printer info i chat
+    viktig:
+      description: Printer viktig i chat
+    c:
+      description: Adminchat
