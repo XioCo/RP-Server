@@ -1,5 +1,6 @@
 package no.xioco.Roleplay.Main;
 
+import no.xioco.Listeners.EntityListeners;
 import no.xioco.Listeners.PlayerListeners;
 import no.xioco.Roleplay.commands.*;
 import org.bukkit.Bukkit;
@@ -19,6 +20,7 @@ public class Main extends JavaPlugin{
 
         PluginManager pm = Bukkit.getPluginManager();
         pm.registerEvents(new PlayerListeners(this), this);
+        pm.registerEvents(new EntityListeners(), this);
         getCommand("tomt").setExecutor(new PlotCommand());
         getCommand("hide").setExecutor(new HideCommand());
         getCommand("ri").setExecutor(new MountCommand());
@@ -30,6 +32,10 @@ public class Main extends JavaPlugin{
         getCommand("info").setExecutor(new BroadcastCommand());
         getCommand("viktig").setExecutor(new BroadcastCommand());
         getCommand("c").setExecutor(new AdminChatCommand());
+        getCommand("spy").setExecutor(new SocialSpyCommand());
+        getCommand("m").setExecutor(new PMCommands());
+        getCommand("r").setExecutor(new PMCommands());
+        getCommand("ignorer").setExecutor(new IgnoreCommand());
     }
 
     @Override

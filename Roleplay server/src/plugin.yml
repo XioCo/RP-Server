@@ -25,3 +25,11 @@ commands:
       description: Printer viktig i chat
     c:
       description: Adminchat
+    m:
+      description: PM
+    r:
+      description: reply
+    spy:
+      description: Socialspy
+    ignorer:
+      description: Ignorerer spiller

@@ -37,7 +37,7 @@ import java.util.UUID;
 /**
  * Created by Thomas on 26.10.2014.
  */
-public class PlayerListeners implements Listener{
+public class PlayerListeners implements Listener {
 
 
     Main plugin;
